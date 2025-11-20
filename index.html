@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallon Logger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Print styles to ensure the report looks good on paper */
+      @media print {
+        .print-hide {
+          display: none !important;
+        }
+        .print-title {
+          font-size: 18pt;
+          margin-bottom: 10px;
+        }
+        .print-summary {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-bottom: 15px;
+        }
+        body {
+          background-color: white;
+        }
+        .history-container {
+          margin-top: 0;
+          border-top: none;
+        }
+        .overflow-x-auto {
+          overflow: visible;
+        }
+        /* Ensure table headers print */
+        thead {
+          display: table-header-group;
+        }
+        tr {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Gallon Logger",
+  "description": "A professional tank inventory and road application tracking system for agricultural and maintenance use. Tracks chemical mixes, environmental conditions, and historical usage with export capabilities.",
+  "requestFramePermissions": []
+}
